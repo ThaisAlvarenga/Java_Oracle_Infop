@@ -1,6 +1,6 @@
 # Primer Proyecto Oficial de Curso de Java con Oracle
 
-Como verán, lo hice en VSCode y no en Eclipse. Shame on me.
+Como verán, lo hice en VSCode y no en Eclipse. Shame on me. 
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
