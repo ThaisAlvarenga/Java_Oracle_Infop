@@ -7,7 +7,10 @@ public class App {
     public static void main(String[] args) throws Exception {
 		
 		//al crear este objeto, los valores de las variables seria nulos porque asi estan en la clase
-        Persona persona1 = new Persona();
+        Persona persona1 = new Persona(1, "Hector");
+		System.out.println("ID: " + persona1.getId());
+		System.out.println("Name: " + persona1.getNombre());
+
 		persona1.setId(10);
 		persona1.setNombre("Thais");
 
