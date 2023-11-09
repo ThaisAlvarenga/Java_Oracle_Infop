@@ -6,6 +6,7 @@ public class Producto {
     private String nombre;
     private double precio;
     private int enExistencia;
+    private boolean estado = true;
 
     public Producto() 
     {
@@ -42,6 +43,17 @@ public class Producto {
         return this.enExistencia;
     }
 
+    public boolean getEstado()
+    {
+        return this.estado;
+    }
+
+    // Este metodo es propio de nuestra clase
+    public double getInventory()
+    {
+        return precio * enExistencia;
+    }
+
     // SETTERS
     public void setNumProducto(int id)
     {
@@ -63,6 +75,11 @@ public class Producto {
         enExistencia = numExistencia;
     }
 
+    public void setEstado(boolean state)
+    {
+        estado = state;
+    }
+
     //definicion de toString()
 
     public String toString()
@@ -71,7 +88,8 @@ public class Producto {
         return "\n Numero del producto: " + this.numProducto
         + "\n Nombre del producto: " + this.nombre
         + "\n Precio del producto: " + this.precio
-        + "\n En existencia del producto: " + this.enExistencia; 
+        + "\n En existencia del producto: " + this.enExistencia
+        + "\n Estado de producto" + (this.estado ? "Activo" : "Desactivo"); 
 
     }
 }
