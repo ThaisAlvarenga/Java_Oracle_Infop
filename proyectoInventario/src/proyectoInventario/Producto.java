@@ -92,4 +92,30 @@ public class Producto {
         + "\n Estado de producto" + (this.estado ? "Activo" : "Desactivo"); 
 
     }
+
+
+    /*Los ... describen que el argumento es variable, osea que podemos pasar cualquier cantidad 
+    que querramos con tal de que los argumentos sean del mismo tipo*/ 
+    public void imprimir(String... mensajes)
+    {
+        for (String mensaje : mensajes)
+        {
+            System.out.println(mensaje);
+        }
+
+        System.out.println();
+    }
+
+
+    public int suma(int... numeros)
+    {
+        int resultado = 0;
+
+        for (int numero: numeros){
+            resultado += numero;
+        }
+
+        return resultado;
+    }
+    
 }

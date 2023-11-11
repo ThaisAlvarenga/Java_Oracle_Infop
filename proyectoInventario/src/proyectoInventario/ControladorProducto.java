@@ -58,7 +58,7 @@ public class ControladorProducto {
         }
 
         //arreglos bidimensionales
-        int[][] myBiArray = new  int[3][2];
+        int[][] myBiArray = new  int[3][3];
         Scanner in = new Scanner(System.in);
 
         for (int i = 0; i < myBiArray.length; i++)
@@ -72,6 +72,25 @@ public class ControladorProducto {
 
         }
 
+        in.close();
+        System.out.println();
 
+
+        for (int i = 0; i < myBiArray.length; i++)
+        {
+            for(int j = 0 ; j < myBiArray[i].length; j++ )
+            {
+                System.out.print(myBiArray[i][j] );
+            }
+
+            System.out.println();
+
+        }
+
+        prod1.imprimir("Hola","Buen dia","Como estamos");
+
+        System.out.println(prod1.suma(1,2,3,4));
+
+        
     }
 }
